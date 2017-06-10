@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui">
+    <h:head>
+        <title><ui:insert name="title">飲み会アプリ</ui:insert></title>
+    </h:head>
+
+    <h:body>
+        <h:form>
+            <p:layout fullPage="true">
+                <p:layoutUnit position="north">
+                    <ui:insert name="header">
+                        <h1><u>飲み会アプリ</u></h1>
+                    </ui:insert>
+                </p:layoutUnit>
+
+                <p:layoutUnit position="center">
+                    <p:layout>
+                        <!--<p:layoutUnit position="north">
+                            <ui:insert name="content-header">
+                                
+                            </ui:insert>
+                        </p:layoutUnit> -->
+                        <p:layoutUnit position="center">
+                            <ui:insert name="content">
+                                
+                            </ui:insert>
+                        </p:layoutUnit>
+                        <!--<p:layoutUnit position="south">
+                            <ui:insert name="content-footer">
+                                
+                            </ui:insert>
+                        </p:layoutUnit>-->
+                    </p:layout>
+                </p:layoutUnit>
+
+                <p:layoutUnit position="west" size="110">
+                    <ui:insert name="west">
+
+                    </ui:insert>
+                </p:layoutUnit>
+            </p:layout>
+        </h:form>
+    </h:body>
+</html>
+
